@@ -13,13 +13,8 @@
             rel="stylesheet"
             href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
         />
-
-        <link
-            rel="stylesheet"
-            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-        />
-
-        <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     </head>
     <body>
         <div class="container">
@@ -32,8 +27,8 @@
                 </div>
                 <ul class="nav">
                     <li><a href="#x">운영진</a></li>
-                    <li><a href="#x">화성환경</a></li>
-                    <li><a href="#x">신청하기</a></li>
+                    <li><a href="gallery.html">화성환경</a></li>
+                    <li><a href="paper.html">신청하기</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -43,8 +38,8 @@
             </div>
 
             <!-- page_title -->
-            <div class="section">
-                <h1 class="member_title">운영진</h1>
+            <div class="section page">
+                <h1>운영진</h1>
             </div>
 
             <!-- member -->
@@ -77,22 +72,24 @@
                     하나에 무덤 벌레는 이름과 릴케 남은 지나가는 책상을
                     있습니다. 별을 책상을 그리워 하나에 애기
                 </p>
-                <video width="970" controls>
+                <video width="970" autoplay loop controls>
                     <source src="../images/movie.mp4" type="video/mp4" />
                 </video>
             </div>
 
             <!-- banner -->
             <div class="banner">
-                <h3>겨울이 남은</h3>
-                <p>
-                    남은 지나가는 책상을 있습니다 별을 책상을 그리워 하나에 애기
-                    이름을 까닭이요, 봅니다. 하나 까닭이요,
-                </p>
+                <div class="text_box">
+                    <h3>겨울이 남은</h3>
+                    <p>
+                        남은 지나가는 책상을 있습니다 별을 책상을 그리워 하나에
+                        애기 이름을 까닭이요, 봅니다. 하나 까닭이요,
+                    </p>
+                </div>
             </div>
             <!-- title-->
-            <div class="section">
-                <h1 class="blog_title">블로그</h1>
+            <div class="section page">
+                <h1>블로그</h1>
             </div>
             <!-- blog -->
             <ul class="section blog">
@@ -109,7 +106,7 @@
                             별을 책상을 그리워 하나에 애기 이름을 까닭이요,
                             봅니다. 하나 까닭이요,
                         </p>
-                        <p>홍길동 / 2115. 07.13</p>
+                        <p class="name">홍길동 / 2115. 07.13</p>
                     </div>
                 </li>
                 <li>
@@ -125,7 +122,7 @@
                             별을 책상을 그리워 하나에 애기 이름을 까닭이요,
                             봅니다. 하나 까닭이요,
                         </p>
-                        <p>홍길동 / 2115. 07.13</p>
+                        <p class="name">홍길동 / 2115. 07.13</p>
                     </div>
                 </li>
                 <li>
@@ -141,7 +138,7 @@
                             별을 책상을 그리워 하나에 애기 이름을 까닭이요,
                             봅니다. 하나 까닭이요,
                         </p>
-                        <p>홍길동 / 2115. 07.13</p>
+                        <p class="name">홍길동 / 2115. 07.13</p>
                     </div>
                 </li>
             </ul>
@@ -181,5 +178,8 @@
                 </div>
             </div>
         </div>
+        <script>
+            $('.banner').parallax({ imageSrc: '../images/banner_bg.jpg' })
+        </script>
     </body>
 </html>
