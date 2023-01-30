@@ -11,10 +11,10 @@
 }
 
 /* movie */
-
 .movie {
     text-align: center;
 }
+
 .movie p {
     font-size: 24px;
     line-height: 1.6;
@@ -27,7 +27,6 @@
 /* banner */
 .banner {
     height: 560px;
-    /* background-image: url(../images/banner_bg.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -43,20 +42,21 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .banner h3 {
     font-size: 40px;
     margin-bottom: 18px;
 }
+
 .banner p {
     font-size: 18px;
+    line-height: 1.4;
     color: var(--dark);
     width: 70%;
     margin: 0 auto;
-    line-height: 1.4;
 }
 
 /* blog */
-
 .blog li {
     display: flex;
     margin-bottom: 100px;
@@ -68,22 +68,20 @@
 }
 
 .blog .right {
-    padding: 10px 0;
     color: var(--dark);
+    padding: 10px 0;
 }
 
 .blog .right h3 {
     font-size: 32px;
-    font-weight: 500;
 }
-
 .blog .right p {
     font-size: 18px;
+    line-height: 1.4;
     margin-top: 18px;
     margin-bottom: 65px;
-    line-height: 1.4;
 }
-.blog .right .name {
+.blog .right p.name {
     font-size: 14px;
     color: var(--mid);
 }
